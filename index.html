@@ -13,6 +13,19 @@
         h2 {
             text-align: center
         }
+
+        #cover h2 {
+            margin: 30px 0 0;
+            text-align: center;
+            font-size: 70px;
+        }
+
+        #cover p {
+            margin: 10px 0 0;
+            text-align: center;
+            font-style: italic;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body class="shower list">
@@ -25,20 +38,11 @@
     <section class="slide" id="cover">
         <h2>Watson, QnA Maker, SpaCy e Serverless?</h2>
         <p>Construindo bots no mundo moderno</p>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                text-align: center;
-                font-size: 70px;
-            }
+    </section>
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                font-style: italic;
-                font-size: 20px;
-            }
-        </style>
+    <section class="slide" id="cover">
+        <h2>Watson, <s>QnA Maker</s>, SpaCy e Serverless?</h2>
+        <p>Construindo bots no mundo moderno</p>
     </section>
 
     <section class="slide">
@@ -152,7 +156,9 @@
             <li>Zipar o conteúdo do arquivo que queremos enviar</li>
         </ul>
         <pre>
-            <code>aws lambda update-function-code</code>
+            <code>aws lambda update-function-code \</code>
+            <code>--function-name "$lambda_name" \</code>
+            <code>--zip-file fileb://"$filename".zip</code>
         </pre>
     </section>
 
@@ -167,7 +173,8 @@
     </section>
 
     <section class="slide">
-        <h2 class="cover">Watson Conversation</h2>
+        <h2>Watson Conversation (Assistant)</h2>
+        <p>Uma plataforma para construcão de AI's de comunicacão</p>
     </section>
 
     <section class="slide">
@@ -183,9 +190,10 @@
         <h2 class="shout">Exemplo</h2>
     </section>
 
-    <section class="slide">
+    <!-- <section class="slide">
         <h2>O que é QnA Maker?</h2>
-        <p>Microsoft's QnAMaker is a Cognitive Service tool that uses your existing content to build and train a simple question and answer bot that responds to users in a natural, conversational way. QnA Maker ingests FAQ URLs, structured documents, and product manuals, extracts all possible question and answer pairs from the content.</p>
+        <p>Microsoft's QnAMaker Uma ferramenta cognitiva que usa seu conteúdo, independente do formato, para construir simples questões/respostas que atendem a conversas naturais com pessoas</p>
+        <p>Utilizado em aplicacões como: FAQs</p>
     </section>
 
     <section class="slide">
@@ -194,7 +202,7 @@
 
     <section class="slide">
         <h2 class="shout">Exemplo</h2>
-    </section>
+    </section> -->
 
     <section class="slide">
         <h2 class="cover">Melhorando o entendimento de nosso robo</h2>
@@ -209,10 +217,9 @@
         <h2 class="shout">Exemplo</h2>
     </section>
 
-    <section class="slide">
+    <!-- <section class="slide">
         <h2 class="cover">Integrando tudo</h2>
-    </section>
-
+    </section> -->
 
     <section class="slide">
         <h2>Consideracões finais</h2>
@@ -233,18 +240,15 @@
             <li>
                 <a href="https://console.bluemix.net/developer/watson/documentation">Watson</a>
             </li>
-            <li>
-                <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/">QnA Maker</a>
-            </li>
         </ul>
     </section>
 
     <section class="slide">
         <span class="shout shrink">
             <h2>
-                <p>E por hoje é só!!</p>
+                <p>E por hoje é só!!!</p>
 
-                <img class="thats_all_folks" src="pictures/thats_all_folks.jpg" alt="That's all folks">
+                <img class="thats_all_folks" src="pictures/thats_all_folks.gif" alt="That's all folks">
 
                 <style>
                     .thats_all_folks {
